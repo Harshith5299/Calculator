@@ -1,0 +1,64 @@
+body{
+        MARGIN: 0;
+        PADDING: 0; /* remove default margin and padding from the body */
+        display: flex; /* use flexbox for layout */
+        justify-content: center; /* center content horizontally */
+        align-items: center; /* center content vertically */
+        height: 100vh; /* full viewport height */
+}
+#calculator{
+    font-family: Arial, sans-serif; /* font for the calculator */
+    background-color: hsl(0,0%,15%); /* background color for the calculator */
+    border-radius: 15px; /* rounded corners for the calculator */
+    max-width: 500px; /* maximum width of the calculator */
+    overflow: hidden; /* The overflow property is set to hidden, which means that 
+    any content that overflows the boundaries of the calculator's container will be 
+    hidden from view. This helps maintain a clean and tidy appearance by preventing 
+    content from spilling out of the container. */
+}
+#buttons{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 3 columns */
+    grid-gap: 10px; /* space between buttons */
+    margin: 20px; /* margin around the grid */
+    justify-items: center; /* center buttons in their grid cells */
+    padding: 25px; /* padding around the grid */
+    background-color: hsl(0,0%,15%); /* background color for the grid */
+}
+
+#display{
+    width: 100%;
+    padding: 20px; /* padding inside the display area */
+    background-color: hsl(0,0%,20%); /* background color for the display area */
+    color: white; /* text color for the display area */
+    font-size: 2rem; /* font size for the display area */
+    text-align: left; /* align text to the left */
+    border: none; /* remove border from the display area */
+}
+
+button:hover{
+        background-color: hsl(0,0%,65%); /* change background color on hover */
+}
+button:active{
+        background-color: hsl(0,0%,90%); /* change background color when button is active */
+}
+button{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: none;
+    background-color: hsl(0,0%,30%);
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+.operator-btn{
+    background-color: hsl(35,100%,55%); /* background color for operator buttons */
+}
+.operator-btn:hover{
+    background-color: hsl(35,100%,65%); /* background color for operator buttons */
+}
+.operator-btn:active{
+    background-color: hsl(35,100%,90%); /* background color for operator buttons */
+}
