@@ -1,4 +1,4 @@
-### **Setting Up and Using BrowserSync** - Needed to display the files on a local server for troubleshooting  
+### **Setting Up and Using BrowserSync** - Needed to display the files on a local server for access to app or for troubleshooting  
 
 #### **1. Install BrowserSync**
 Ensure you have **Node.js** installed, then install BrowserSync globally:  
