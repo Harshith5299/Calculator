@@ -3,10 +3,14 @@ body{
         PADDING: 0; /* remove default margin and padding from the body */
         display: flex; /* use flexbox for layout */
         justify-content: center; /* center content horizontally */
-        align-items: center; /* center content vertically */
+        align-items: flex-start; /* align items to the top of the viewport */
+        flex-direction: center; /* stack items vertically */
         height: 100vh; /* full viewport height */
+        overflow-y: auto; /* allow vertical scrolling if needed */
 }
 #calculator{
+    min-height: 100vh; /* full viewport height */
+    width: 100%; /* full width of the viewport */
     font-family: Arial, sans-serif; /* font for the calculator */
     background-color: hsl(0,0%,15%); /* background color for the calculator */
     border-radius: 15px; /* rounded corners for the calculator */
@@ -27,6 +31,7 @@ body{
 }
 
 #display{
+    min-height: 5vh; /* a small percentage of the viewport height is allocated to showing the display */
     width: 100%;
     padding: 20px; /* padding inside the display area */
     background-color: hsl(0,0%,20%); /* background color for the display area */
@@ -34,6 +39,7 @@ body{
     font-size: 2rem; /* font size for the display area */
     text-align: left; /* align text to the left */
     border: none; /* remove border from the display area */
+    overflow-y: auto; /* allow vertical scrolling if needed */
 }
 
 button:hover{
