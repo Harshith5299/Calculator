@@ -54,3 +54,9 @@ npm run start
 Press `CTRL + C` in the terminal.
 
 That's it! 🎉 Now your changes will automatically reload in the browser. 🚀
+
+**If you want to test compatibility accross multiple devices simultaneously, please disable browser sync ghost mode as it causes forced synchronization
+
+```
+browser-sync start --server --directory --files "**/*" --no-ghost-mode
+```
